@@ -1,6 +1,6 @@
 FROM docker:latest
 MAINTAINER Rogov Denis (Glafir) <glafir@ya.ru>
-ENV EDGE_MAIN http://dl-cdn.alpinelinux.org/alpine/edge/main &&\
+ENV EDGE_MAIN http://dl-cdn.alpinelinux.org/alpine/edge/main \
     EDGE_COMMUNITY http://dl-cdn.alpinelinux.org/alpine/edge/community
 RUN apk update --repository=$EDGE_MAIN --repository=$EDGE_COMMUNITY &&\
     apk --no-cache add \
